@@ -1,0 +1,18 @@
+package: community.lazycat.app.ignis
+version: 0.8.10
+name: Ignis
+description: Run Obsidian as a self-hosted web app, not a remote desktop.
+homepage: https://github.com/Nystik-gh/ignis
+author: Nystik-gh
+license: AGPL-3.0-or-later
+min_os_version: 1.5.0
+permissions:
+  required:
+    - net.internet
+locales:
+  zh:
+    name: Ignis
+    description: 将 Obsidian 作为自托管 Web 应用运行，而非远程桌面。
+  en:
+    name: Ignis
+    description: Run Obsidian as a self-hosted web app, not a remote desktop.

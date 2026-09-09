@@ -1,0 +1,41 @@
+params:
+- id: puid
+  type: string
+  name: User ID
+  description: Numeric container user ID (1-65535).
+  default_value: '1000'
+  optional: false
+- id: pgid
+  type: string
+  name: Group ID
+  description: Numeric container group ID (1-65535).
+  default_value: '1000'
+  optional: false
+- id: port
+  type: string
+  name: Server port
+  description: Container HTTP port (1024-65535). The application route follows this
+    port.
+  default_value: '8080'
+  optional: false
+- id: obsidian_version
+  type: string
+  name: Obsidian version
+  description: Obsidian version to download. Keep 1.12.7 for compatibility with this
+    Ignis release.
+  default_value: 1.12.7
+  optional: false
+locales:
+  zh:
+    puid:
+      name: 用户 ID
+      description: 容器用户 ID，填写 1–65535 的整数。
+    pgid:
+      name: 用户组 ID
+      description: 容器用户组 ID，填写 1–65535 的整数。
+    port:
+      name: 服务端口
+      description: 容器 HTTP 端口，填写 1024–65535 的整数，应用路由会同步使用此端口。
+    obsidian_version:
+      name: Obsidian 版本
+      description: 首次下载的 Obsidian 版本。建议保留 1.12.7，以匹配当前 Ignis 兼容版本。
