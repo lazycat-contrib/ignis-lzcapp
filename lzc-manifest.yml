@@ -12,8 +12,8 @@ application:
         - src: file:///lzcapp/pkg/content/lazycat-injects/lzc-file-chooser-inject.js
 services:
   ignis:
-    # upstream: nobbe/ignis:latest
-    image: docker.1ms.run/nobbe/ignis@sha256:f47400d33d87f27d50c5c057aa2dc951c9208e3feb5cf81890152be26bad13db
+    # upstream: nobbe/ignis:0.8.10
+    image: docker.1ms.run/nobbe/ignis:0.8.10
     environment:
       - PUID={{ .U.puid }}
       - PGID={{ .U.pgid }}

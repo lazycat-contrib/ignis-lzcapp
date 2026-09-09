@@ -28,9 +28,9 @@ lzc-cli lpk info dist/ignis.lpk
 actionlint
 ```
 
-包名：`community.lazycat.app.ignis`；目标：`linux/amd64`。使用上游 `nobbe/ignis:latest` 的镜像加速地址，按架构摘要锁定内容。
+包名：`community.lazycat.app.ignis`；目标：`linux/amd64`。当前上游镜像为 `nobbe/ignis:0.8.10`，通过镜像加速站交付。
 
-`.github/workflows/lazycat.yml` 调用 `ca-x/lazycat-github-action/.github/workflows/lazycat.yml@v1`，定时或手动检测 latest 摘要。摘要改变后递增打包版本的 patch，摘要不变则不升级。打包版本初始为 0.8.10，后续并不等同于上游版本。镜像与上游摘要必须一致。
+`.github/workflows/lazycat.yml` 调用 `ca-x/lazycat-github-action/.github/workflows/lazycat.yml@v1`，定时或手动检测后续稳定版本标签，打包版本跟随上游版本。镜像与上游的目标架构摘要必须一致。
 
 自动生成版本化 Release 资产 `<package>-v<version>.lpk`，验证 SHA256 后发布喵喵商店；不发布官方商店。组织或仓库需配置 `APPSTORE_URL`、`APPSTORE_TOKEN`；私有分组可使用 `PRIVATE_STORE_GROUP_CODES`。不在仓库保存凭据。
 
