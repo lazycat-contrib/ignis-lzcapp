@@ -1,5 +1,5 @@
 package: community.lazycat.app.ignis
-version: 0.8.12
+version: 0.8.13
 name: Ignis
 description: Run Obsidian as a self-hosted web app, not a remote desktop.
 homepage: https://github.com/Nystik-gh/ignis
